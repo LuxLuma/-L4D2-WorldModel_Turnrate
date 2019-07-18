@@ -53,6 +53,10 @@ public void OnPluginStart()
 	hCvar_FeetYawRate_Max = FindConVar("mp_feetyawrate_max");
 	
 	HookConVarChange(hCvar_TurnRate, eConvarChanged);
+	HookConVarChange(hCvar_FaceFrontTime, eConvarChanged);
+	HookConVarChange(hCvar_FeetMaxYawRate, eConvarChanged);
+	HookConVarChange(hCvar_FeetYawRate, eConvarChanged);
+	HookConVarChange(hCvar_FeetYawRate_Max, eConvarChanged);
 	
 	AutoExecConfig(true, "L4D2_WorldModel_Turnrate");
 	
